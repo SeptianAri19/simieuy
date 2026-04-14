@@ -1,33 +1,25 @@
-<div class="w-64 bg-red-700 text-white min-h-screen p-5">
+<aside class="w-72 bg-red-700 min-h-screen text-white p-6">
+    <h1 class="text-3xl font-bold mb-10">Inventory System</h1>
 
-    <h2 class="text-xl font-bold mb-6">
-        Inventory System
-    </h2>
+    <nav class="space-y-6 text-xl">
+        <a href="{{ route('dashboard') }}"
+           class="block hover:underline {{ request()->routeIs('dashboard') ? 'font-bold' : '' }}">
+            Dashboard
+        </a>
 
-    <ul class="space-y-3">
-        <li>
-            <a href="/dashboard" class="block hover:bg-red-600 p-2 rounded">
-                Dashboard
-            </a>
-        </li>
+        <a href="{{ route('inventories.index') }}"
+           class="block hover:underline {{ request()->routeIs('inventories.*') ? 'font-bold' : '' }}">
+            Data Inventaris
+        </a>
 
-        <li>
-            <a href="#" class="block hover:bg-red-600 p-2 rounded">
-                Data Inventaris
-            </a>
-        </li>
+        <a href="#"
+           class="block hover:underline">
+            Permintaan Peminjaman
+        </a>
 
-        <li>
-            <a href="#" class="block hover:bg-red-600 p-2 rounded">
-                Permintaan Peminjaman
-            </a>
-        </li>
-
-        <li>
-            <a href="#" class="block hover:bg-red-600 p-2 rounded">
-                Pengembalian Inventaris
-            </a>
-        </li>
-    </ul>
-
-</div>
+        <a href="#"
+           class="block hover:underline">
+            Pengembalian Inventaris
+        </a>
+    </nav>
+</aside>
