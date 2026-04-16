@@ -12,7 +12,7 @@
             Data Inventaris
         </a>
 
-        <a href="#"
+        <a href="{{ route('loan-requests.index') }}"
            class="block hover:underline">
             Permintaan Peminjaman
         </a>
